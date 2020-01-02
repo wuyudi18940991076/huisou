@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# section: http://ogp.me/ns/website#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>LOIT | Luxury fashion and designer brands</title>
+  <link rel="icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/main.v01.css">
+  <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="../js/slick.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="../asset/html5shiv.js"></script>
+  <![endif]-->
+
+
+
+</head>
+
+<body>
+  <!-- ▼▼▼▼▼▼ wrapper ▼▼▼▼▼▼ -->
+  <div id="wrapper">
+    <!-- ▼▼▼▼ header ▼▼▼▼ -->
+    <header id="header"></header>
+    <script>
+      $("#header").load("include/header.html");
+    </script>
+    <!-- ▲▲▲▲ header ▲▲▲▲ -->
+    <!-- ▼▼▼▼ main ▼▼▼▼ -->
+    <main id="main" class="about_careers store">
+      <div class="mainCon row">
+        <div class="mySilder col-sm-2 col-md-2">
+          <h3>ABOUT US</h3>
+          <ul>
+            <li>
+              <a herf="#">LOIT</a>
+            </li>
+            <li>
+              <a herf="#">Office</a>
+            </li>
+            <li class="on">
+              <a herf="#">Store Location</a>
+            </li>
+            <li>
+              <a herf="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="myCon col-sm-16 col-md-14">
+          <div class="myCon_info">
+            <div class="infoTitle">
+              <h3>Store Location</h3>
+            </div>
+            <div class="infoCon">
+              <ul class="subTab threeTab">
+                <li class="on"><a href="#">LOIT DTLA</a></li>
+                <li><a href="#">LOIT NJ</a></li>
+              </ul>
+              <div class="tabCont">
+                <div class="storeIntro row">
+                  <div class="carousel col-sm-16 col-md-12">
+                    <div class="carousel_con">
+                      <div>
+                        <a href="#">
+                          <img src="../img/sub/img_loitdtla.jpg" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img src="../img/sub/img_loitnj.jpg" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img src="../img/sub/img_loitdtla.jpg" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img src="../img/sub/img_loitnj.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_text col-sm-16 col-md-4">
+                    <div class="storeTxt">
+                      <div class="row">
+                        <div class="padding_top22 col-xs-8 col-md-16">
+                          <h4>STORE Address</h4>
+                          <p class="infoText">301 W Olympic Blvd<br>
+                            Los Angeles, CA 90015<br>
+                            Store: +1 213 372 5025<br>
+                            Café: +1 213 372 5102</p>
+                        </div>
+                        <div class="padding_top22 col-xs-8 col-md-16">
+                          <h4>Store Hours</h4>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <p class="infoText">Mon<br>
+                                Tue-Sat<br>
+                                Sun</p>
+                            </div>
+                            <div class="col-xs-8">
+                              <p class="infoText">Closed<br>
+                                11am-6pm<br>
+                                12pm-5pm</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="padding_top22 col-xs-8 col-md-16">
+                          <h4>Café Hours</h4>
+                          <div class="row">
+                            <div class="col-xs-8">
+                              <p class="infoText">Mon-Sat<br>Sun</p>
+                            </div>
+                            <div class="col-xs-8">
+                              <p class="infoText">8am-7pm<br>9am-7pm</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="padding_top22 col-xs-8 col-md-16">
+                          <p class="infoText">
+                            <a class="have_line" href="#">Directions</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ▲▲▲▲ main ▲▲▲▲ -->
+    <!-- ▼▼▼▼ footer ▼▼▼▼ -->
+    <footer id="footer"></footer>
+    <script>
+      $("#footer").load("include/footer.html");
+    </script>
+    <!-- ▲▲▲▲ footer ▲▲▲▲ -->
+  </div>
+  <!-- ▲▲▲▲▲▲ wrapper ▲▲▲▲▲▲ -->
+
+  <script>
+    $(document).ready(function () {
+      $('.carousel_con').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+              dots: true
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>
