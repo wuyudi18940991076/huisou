@@ -23,18 +23,23 @@
     <!-- ▼▼▼▼ header ▼▼▼▼ -->
     <header id="header"></header>
     <script>
-      $("#header").load("include/header.html");
+      $("#header").load("include/headerTwoWord.html");
     </script>
     <!-- ▲▲▲▲ header ▲▲▲▲ -->
     <!-- ▼▼▼▼ main ▼▼▼▼ -->
-    <main id="main" class="checkout_01">
-      <div class="checkout_error">
-        <h3>WISHLIST</h3>
-        <p>Your wishlist is empty</p>
-        <div class="btnArea">
-          <a href="" class="button button_b">BACK TO WISHLIST</a>
-        </div>
-      </div>
+    <main id="main" class="search_result">
+      <p class="server_error_img">
+        <img src="../img/svg/error.svg" alt="">
+      </p>
+      <p class="server_error_txt">Sorry, we are having some temporary server issues.<br>Please try again later.</p>
+      <ul class="server_error_btn">
+        <li>
+          <a href="" class="button button_w">TRY AGAIN</a>
+        </li>
+        <li>
+          <a href="" class="button button_b">MAIN</a>
+        </li>
+      </ul>
     </main>
     <!-- ▲▲▲▲ main ▲▲▲▲ -->
     <!-- ▼▼▼▼ footer ▼▼▼▼ -->

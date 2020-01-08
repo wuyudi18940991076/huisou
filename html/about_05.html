@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# section: http://ogp.me/ns/website#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>LOIT | Luxury fashion and designer brands</title>
+  <link rel="icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/main.v01.css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.about_wrap').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+          breakpoint: 992,
+          settings: {
+            dots: true
+          }
+        }]
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- ▼▼▼▼▼▼ wrapper ▼▼▼▼▼▼ -->
+  <div id="wrapper">
+    <!-- ▼▼▼▼ header ▼▼▼▼ -->
+    <header id="header"></header>
+    <script>
+      $("#header").load("include/header.html");
+    </script>
+    <!-- ▲▲▲▲ header ▲▲▲▲ -->
+    <!-- ▼▼▼▼ main ▼▼▼▼ -->
+    <main id="main" class="about">
+      <section class="about_left">
+        <dl>
+          <dt>ABOUT US</dt>
+          <dd><a href="">LOIT</a></dd>
+          <dd><a href="">Office</a></dd>
+          <dd><a class="on" href="">Store Location</a></dd>
+          <dd><a href="">Careers</a></dd>
+        </dl>
+      </section>
+      <section class="about_right">
+        <h3 class="about_title">STORE LOCATION</h3>
+        <ul class="loit_menu">
+          <li><a class="click" href="">LOIT DTLA</a></li>
+          <li><a href="">LOIT NJ</a></li>
+        </ul>
+        <div class="about_tab">
+          <div class="about_wrap">
+            <div>
+              <a href="#">
+                <img src="../img/sub/img_loitdtla.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="../img/sub/img_loitnj.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="../img/sub/img_loitdtla.jpg" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="../img/sub/img_loitnj.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="about_loit_txt">
+            <dl>
+              <dt>STORE ADDRESS</dt>
+              <dd>301 W Olympic Blvd</dd>
+              <dd>Los Angeles, CA 90015</dd>
+              <dd>Store: +1 213 372 5025</dd>
+              <dd>Café: +1 213 372 5102</dd>
+            </dl>
+            <dl class="need_flex">
+              <dt>STORE HOURS</dt>
+              <dd>Mon<br>Tue-Sat<br>Sun</dd>
+              <dd>Closed<br>11am-6pm<br>12pm-5pm</dd>
+            </dl>
+            <dl class="need_flex">
+              <dt>CAFÉ HOURS</dt>
+              <dd>Mon-Sat<br>Sun</dd>
+              <dd>8am-7pm<br>9am-7pm</dd>
+            </dl>
+            <dl>
+              <dd><a href="#">Directions</a></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ▲▲▲▲ main ▲▲▲▲ -->
+    <!-- ▼▼▼▼ footer ▼▼▼▼ -->
+    <footer id="footer"></footer>
+    <script>
+      $("#footer").load("include/footer.html");
+    </script>
+    <!-- ▲▲▲▲ footer ▲▲▲▲ -->
+  </div>
+  <!-- ▲▲▲▲▲▲ wrapper ▲▲▲▲▲▲ -->
+
+</body>
+
+</html>
