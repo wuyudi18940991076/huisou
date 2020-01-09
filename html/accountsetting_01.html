@@ -13,16 +13,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
   <link rel="stylesheet" href="../css/slick.css">
   <link rel="stylesheet" href="../css/main.v01.css">
-  <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
   <script src="../js/jquery-1.12.4.min.js"></script>
-  <!-- <script src="jquery.min.js"></script> -->
   <script src="../js/slick.min.js"></script>
-  <!--[if lt IE 9]>
-  <script src="../asset/html5shiv.js"></script>
-  <![endif]-->
-
-
-
 </head>
 
 <body>
@@ -35,97 +27,71 @@
     </script>
     <!-- ▲▲▲▲ header ▲▲▲▲ -->
     <!-- ▼▼▼▼ main ▼▼▼▼ -->
-    <main id="main" class="about_careers store">
-      <div class="mainCon row">
-        <div class="mySilder col-sm-2 col-md-2">
-          <h3>MYACCOUNT</h3>
-          <ul>
-            <li class="on">
-              <a herf="#">Account Settings</a>
+    <main id="main" class="about">
+      <section class="about_left">
+        <dl>
+          <dt>MYACCOUNT</dt>
+          <dd><a class="on" href="">Account Settings</a></dd>
+          <dd><a href="">Order History</a></dd>
+          <dd><a href="">Store Location</a></dd>
+          <dd><a href="">SSign Out</a></dd>
+        </dl>
+      </section>
+      <section class="about_right">
+        <div class="account_info">
+          <h3 class="about_title account_tit">Account Info</h3>
+          <ul class="at_info_form">
+            <li class="account_margin">
+              <input type="text" class="input" value="jina@gmail.com" disabled>
             </li>
-            <li>
-              <a herf="#">Order History</a>
+            <li class="account_margin account_radio">
+              <p>Newsletter</p>
+              <div class="radio">
+                <div class="radioStyle">
+                  <input type="radio" name="newsletter" id="yes" checked="">
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="radioStyle">
+                  <input type="radio" name="newsletter" id="no">
+                  <label for="no">No</label>
+                </div>
+              </div>
             </li>
-            <li>
-              <a herf="#">SSign Out</a>
+            <li class="account_margin">
+              <input type="text" class="input" value="Jinah">
+            </li>
+            <li class="account_margin">
+              <input type="text" class="input" value="" placeholder="Last Name">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="tel" name="tel" class="input" value="201-488-0054">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="curPw" name="curPw" class="input" value="" placeholder="Current Password">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="newPw" name="newPw" class="input" value="" placeholder="New Password">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="confPw" name="confPw" class="input" value="" placeholder="Confirm Password">
+            </li>
+            <li class="account_margin save_btn">
+              <a href="" class="button button_b">SAVE</a>
             </li>
           </ul>
         </div>
-        <div class="myCon accsetCon col-sm-16 col-md-14">
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Account Info</h3>
-            </div>
-            <div class="infoCon">
-              <form>
-                <div class="editBox">
-                  <div class="formMode per90">
-                    <input id="Email" name="Email" class="formControl" value="jina@gmail.com" disabled="">
-                  </div>
-                  <div class="formMode per90 newslt">
-                    <div class="row">
-                      <div>
-                        <p class="formTit">Newsletter</p>
-                      </div>
-                      <div>
-                        <div class="radioStyle">
-                          <input type="radio" name="newsletter" id="yes" checked="">
-                          <label for="yes">Yes</label>
-                        </div>
-                        <div class="radioStyle">
-                          <input type="radio" name="newsletter" id="no">
-                          <label for="no">No</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="firstName" name="firstName" class="formControl" value="Jinah">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="lastName" name="lastName" class="formControl" value=""
-                      placeholder="Last Name">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="tel" name="tel" class="formControl" value="201-488-0054">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="curPw" name="curPw" class="formControl" value=""
-                      placeholder="Current Password">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="newPw" name="newPw" class="formControl" value="" placeholder="New Password">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="confPw" name="confPw" class="formControl" value=""
-                      placeholder="Confirm Password">
-                  </div>
-                  <div class="formMode per90">
-                    <button type="submit" class="btn btnBlack">Save</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        <div class="address_payment">
+          <div class="account_info">
+            <h3 class="about_title account_tit">ADDRESS BOOK</h3>
+            <a href="#" class="btn_view">Add New</a>
+            <p class="no_save">You haven’t saved any address yet.</p>
           </div>
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Address Book</h3>
-              <a href="#" class="btnView">Add New</a>
-            </div>
-            <div class="infoCon">
-              <p class="infoText noSave">You haven’t saved any address yet.</p>
-            </div>
-          </div>
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Payment Method</h3>
-            </div>
-            <div class="infoCon">
-              <p class="infoText noSave">You haven’t saved any address yet.</p>
-            </div>
+          <div class="account_info">
+            <h3 class="about_title account_tit">Account Info</h3>
+            <p class="no_save">You haven’t saved any address yet.</p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- ▲▲▲▲ main ▲▲▲▲ -->
     <!-- ▼▼▼▼ footer ▼▼▼▼ -->

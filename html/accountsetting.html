@@ -13,16 +13,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="../img/ico/favicon_loit.ico">
   <link rel="stylesheet" href="../css/slick.css">
   <link rel="stylesheet" href="../css/main.v01.css">
-  <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
   <script src="../js/jquery-1.12.4.min.js"></script>
-  <!-- <script src="jquery.min.js"></script> -->
   <script src="../js/slick.min.js"></script>
-  <!--[if lt IE 9]>
-  <script src="../asset/html5shiv.js"></script>
-  <![endif]-->
-
-
-
 </head>
 
 <body>
@@ -35,266 +27,171 @@
     </script>
     <!-- ▲▲▲▲ header ▲▲▲▲ -->
     <!-- ▼▼▼▼ main ▼▼▼▼ -->
-    <main id="main" class="about_careers store">
-      <div class="mainCon row">
-        <div class="mySilder col-sm-2 col-md-2">
-          <h3>MYACCOUNT</h3>
-          <ul>
-            <li class="on">
-              <a herf="#">Account Settings</a>
+    <main id="main" class="about">
+      <section class="about_left">
+        <dl>
+          <dt>MYACCOUNT</dt>
+          <dd><a class="on" href="">Account Settings</a></dd>
+          <dd><a href="">Order History</a></dd>
+          <dd><a href="">Store Location</a></dd>
+          <dd><a href="">SSign Out</a></dd>
+        </dl>
+      </section>
+      <section class="about_right">
+        <div class="account_info">
+          <h3 class="about_title account_tit">Account Info</h3>
+          <ul class="at_info_form">
+            <li class="account_margin">
+              <input type="text" class="input" value="jina@gmail.com" disabled>
             </li>
-            <li>
-              <a herf="#">Order History</a>
+            <li class="account_margin account_radio">
+              <p>Newsletter</p>
+              <div class="radio">
+                <div class="radioStyle">
+                  <input type="radio" name="newsletter" id="yes" checked="">
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="radioStyle">
+                  <input type="radio" name="newsletter" id="no">
+                  <label for="no">No</label>
+                </div>
+              </div>
             </li>
-            <li>
-              <a herf="#">SSign Out</a>
+            <li class="account_margin">
+              <input type="text" class="input" value="Jinah">
+            </li>
+            <li class="account_margin have_error">
+              <input type="text" class="input" value="" placeholder="Last Name">
+              <p class="input_error">Please fill out this field.</p>
+            </li>
+            <li class="account_margin">
+              <input type="text" id="tel" name="tel" class="input" value="201-488-0054">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="curPw" name="curPw" class="input" value="" placeholder="Current Password">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="newPw" name="newPw" class="input" value="" placeholder="New Password">
+            </li>
+            <li class="account_margin">
+              <input type="text" id="confPw" name="confPw" class="input" value="" placeholder="Confirm Password">
+            </li>
+            <li class="account_margin save_btn">
+              <a href="" class="button button_b">SAVE</a>
             </li>
           </ul>
         </div>
-        <div class="myCon accsetCon col-sm-16 col-md-14">
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Account Info</h3>
-            </div>
-            <div class="infoCon">
-              <form>
-                <div class="editBox ">
-                  <div class="formMode per90">
-                    <input id="Email" name="Email" class="formControl" value="jina@gmail.com" disabled="">
-                  </div>
-                  <div class="formMode per90 newslt">
-                    <div class="row">
-                      <div>
-                        <p class="formTit">Newsletter</p>
-                      </div>
-                      <div class="col-xs-12">
-                        <div class="radioStyle">
-                          <input type="radio" name="newsletter" id="yes" checked="">
-                          <label for="yes">Yes</label>
-                        </div>
-                        <div class="radioStyle">
-                          <input type="radio" name="newsletter" id="no">
-                          <label for="no">No</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="firstName" name="firstName" class="formControl" value="Jinah">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="lastName" name="lastName" class="formControl" value=""
-                      placeholder="Last Name">
-                    <div class="txt-error" style="display: block;">Please fill out this field.</div>
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="tel" name="tel" class="formControl" value="201-488-0054">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="curPw" name="curPw" class="formControl" value=""
-                      placeholder="Current Password">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="newPw" name="newPw" class="formControl" value="" placeholder="New Password">
-                  </div>
-                  <div class="formMode per90">
-                    <input type="text" id="confPw" name="confPw" class="formControl" value=""
-                      placeholder="Confirm Password">
-                  </div>
-                  <div class="formMode per90">
-                    <button type="submit" class="btn btnBlack">Save</button>
-                  </div>
+        <div class="address_payment">
+          <div class="account_info">
+            <h3 class="about_title account_tit">ADDRESS BOOK</h3>
+            <a href="#" class="btn_view">Add New</a>
+            <ul class="at_info_form form_full">
+              <li class="account_margin half">
+                <input type="text" class="input" value="Jinah">
+                <input type="text" class="input" value="HAN">
+              </li>
+              <li class="account_margin half full_768">
+                <input type="text" class="input" value="134 Liberty St">
+                <input type="text" class="input" value="" placeholder="Apt. Suite. Etc (Optional)">
+              </li>
+              <li class="account_margin half">
+                <input type="text" class="input" value="Hackensack">
+                <select class="select" name="" id="" disabled>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Jersey">New Jersey</option>
+                </select>
+              </li>
+              <li class="account_margin half have_error">
+                <input type="text" class="input" value="07601" placeholder="Last Name">
+                <input id="phone" name="phone" class="input" placeholder="" value="201-488-0054">
+                <p class="input_error">Please fill out this field.</p>
+              </li>
+              <li class="account_margin check">
+                <div class="checkStyle">
+                  <input type="checkbox" id="default">
+                  <label for="default">Default</label>
                 </div>
-              </form>
-            </div>
+              </li>
+              <li class="account_margin half_btn">
+                <a href="" class="button button_w">Delete</a>
+                <a href="" class="button button_b">Save</a>
+              </li>
+            </ul>
+            <ul class="at_info_form form_full form_padding">
+              <li class="account_margin half">
+                <input type="text" class="input" value="Jinah">
+                <input type="text" class="input" value="HAN">
+              </li>
+              <li class="account_margin half full_768">
+                <input type="text" class="input" value="134 Liberty St">
+                <input type="text" class="input" value="" placeholder="Apt. Suite. Etc (Optional)">
+              </li>
+              <li class="account_margin half">
+                <input type="text" class="input" value="Hackensack">
+                <select class="select" name="" id="" disabled>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Jersey">New Jersey</option>
+                </select>
+              </li>
+              <li class="account_margin half">
+                <input type="text" class="input" value="07601" placeholder="Last Name">
+                <input id="phone" name="phone" class="input" placeholder="" value="201-488-0054">
+              </li>
+              <li class="account_margin check">
+                <div class="checkStyle">
+                  <input type="checkbox" id="default">
+                  <label for="default">Set as Default</label>
+                </div>
+              </li>
+              <li class="account_margin half_btn">
+                <a href="" class="button button_w">Delete</a>
+                <a href="" class="button button_b">Save</a>
+              </li>
+            </ul>
           </div>
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Address Book</h3>
-              <a href="#" class="btnView">Add New</a>
-            </div>
-            <div class="infoCon">
-              <form>
-                <div class="editBox">
-                  <div class="formBox">
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="firstName" name="firstName" class="formControl" placeholder="" value="Jinah">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="lastName" name="lastName" class="formControl" placeholder="" value="HAN">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="address" name="address" class="formControl" placeholder="" value="134 Liberty St">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="apt" name="apt" class="formControl" placeholder="Apt. Suite. Etc (Optional)"
-                          value="">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="address" name="address" class="formControl" placeholder="" value="Hackensack">
-                      </div>
-                      <div class="formMode per50">
-                        <div class="selStyle1">
-                          <p class="setBtn">
-                            <button href="#">New Jersey</button>
-                          </p>
-                        </div>
-                        <div class="selNormal">
-                          <select>
-                            <option>New Jersey</option>
-                            <option>36FR(Only One Left)</option>
-                            <option>38FR(Sold Out)</option>
-                            <option>40FR</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row txt-error2">
-                      <div class="formMode per50">
-                        <input id="zipcode" name="zipcode" class="formControl" placeholder="" value="07601">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="phone" name="phone" class="formControl" placeholder="" value="201-488-0054">
-                      </div>
-                      <div class="txt-error">Your zipcode does not match the selected state.
-                      </div>
-                    </div>
-
-                    <div class="formMode per100">
-                      <div class="checkStyle">
-                        <input type="checkbox" id="default">
-                        <label for="default">Default</label>
-                      </div>
-                    </div>
-                    <div class="formMode per100 btnTwo">
-                      <button type="submit" class="btn btnWhite">Delete</button>
-                      <button type="submit" class="btn btnBlack">Save</button>
-                    </div>
-                  </div>
-
-                  <div class="formBox formBox2">
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="firstName" name="firstName" class="formControl" placeholder="" value="Jinah">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="lastName" name="lastName" class="formControl" placeholder="" value="HAN">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="address" name="address" class="formControl" placeholder="" value="134 Liberty St">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="apt" name="apt" class="formControl" placeholder="Apt. Suite. Etc (Optional)"
-                          value="">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="address" name="address" class="formControl" placeholder="" value="Hackensack">
-                      </div>
-                      <div class="formMode per50">
-                        <div class="selStyle1">
-                          <p class="setBtn"><button href="#">New Jersey</button></p>
-
-                          <ul class="selList">
-                            <li class="selOption selAction">New Jersey</li>
-                            <li class="selOption selHover">36FR(Only One Left)</li>
-                            <li class="selOption">38FR(Sold Out)</li>
-                            <li class="selOption">40FR</li>
-                          </ul>
-                        </div>
-                        <div class="selNormal">
-                          <select>
-                            <option>New Jersey</option>
-                            <option>36FR(Only One Left)</option>
-                            <option>38FR(Sold Out)</option>
-                            <option>40FR</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="formMode per50">
-                        <input id="zipcode" name="zipcode" class="formControl" placeholder="" value="07601">
-                      </div>
-                      <div class="formMode per50">
-                        <input id="phone" name="phone" class="formControl" placeholder="" value="201-488-0054">
-                      </div>
-                    </div>
-
-                    <div class="formMode per100">
-                      <div class="checkStyle">
-                        <input type="checkbox" id="default1">
-                        <label for="default1">Set as Default</label>
-                      </div>
-                    </div>
-                    <div class="formMode per100 btnTwo">
-                      <button type="submit" class="btn btnWhite">Delete</button>
-                      <button type="submit" class="btn btnBlack">Save</button>
-                    </div>
-                  </div>
+          <div class="account_info">
+            <h3 class="about_title account_tit">Account Info</h3>
+            <ul class="payment_form">
+              <li class="payment_method">
+                <p class="pay_img">
+                  <img class="amex" src="../img/svg/amex.svg" alt="">
+                </p>
+                <p class="pay_txt">
+                  American Express: ***********5104<br>
+                  Validity: 03/22<br>
+                  Card Holder’s Name: Jinah HAN
+                </p>
+                <div class="checkStyle pay_check">
+                  <input type="checkbox" id="default2">
+                  <label for="default2">Default</label>
                 </div>
-              </form>
-            </div>
-          </div>
-          <div class="myCon_info">
-            <div class="infoTitle">
-              <h3>Payment Method</h3>
-            </div>
-            <div class="infoCon">
-              <form>
-                <div class="row">
-                  <div class="col-sm-8">
-                    <div class="payEdit noBorder">
-                      <p class="payImg">
-                        <img class="amex" src="../img/svg/amex.svg" alt="">
-                      </p>
-                      <p class="payTxt">American Express: ***********5104<br>
-                        Validity: 03/22<br>
-                        Card Holder’s Name: Jinah HAN</p>
-                      <div class="formMode">
-                        <div class="checkStyle">
-                          <input type="checkbox" id="default2">
-                          <label for="default2">Default</label>
-                        </div>
-                      </div>
-                      <div class="formMode">
-                        <button type="submit" class="btn btnWhite">Delete</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="payEdit">
-                      <p class="payImg">
-                        <img class="visa" src="../img/svg/visa.svg" alt="">
-                      </p>
-                      <p class="payTxt">Visa: ***********5104<br>
-                        Validity: 03/22<br>
-                        Card Holder’s Name: Jinah HAN</p>
-                      <div class="formMode">
-                        <div class="checkStyle">
-                          <input type="checkbox" id="default3">
-                          <label for="default3">Set as Default</label>
-                        </div>
-                      </div>
-                      <div class="formMode">
-                        <button type="submit" class="btn btnWhite">Delete</button>
-                      </div>
-                    </div>
-                  </div>
+                <p class="pay_delete">
+                  <a href="" class="button button_w">Delete</a>
+                </p>
+              </li>
+              <li class="payment_method">
+                <p class="pay_img">
+                  <img class="visa" src="../img/svg/visa.svg" alt="">
+                </p>
+                <p class="pay_txt">
+                  Visa: ***********5104<br>
+                  Validity: 03/22<br>
+                  Card Holder’s Name: Jinah HAN
+                </p>
+                <div class="checkStyle pay_check">
+                  <input type="checkbox" id="default2">
+                  <label for="default2">Set as Default</label>
                 </div>
-              </form>
-            </div>
+                <p class="pay_delete">
+                  <a href="" class="button button_w">Delete</a>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- ▲▲▲▲ main ▲▲▲▲ -->
     <!-- ▼▼▼▼ footer ▼▼▼▼ -->
