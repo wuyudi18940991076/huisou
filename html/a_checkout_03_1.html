@@ -61,11 +61,11 @@
                 <div class="formMode have_popup">
                   <p class="cvnForm">
                     <input type="text" id="cvn" name="cvn" class="formControl" value="" placeholder="CVN">
-                    <a class="cvn_but" href="#">CVN?</a>
+                    <a class="cvn_but" id="cvn_but" href="javascript:;">CVN?</a>
                   </p>
-                  <div class="cvnPopup">
+                  <div class="cvnPopup" id="cvnPopup" onclick="outsize=false">
                     <p class="popTtl">SECURITY CODE?</p>
-                    <a class="close" href="#">close</a>
+                    <a class="close" id="cvn_close" href="javascript:;">close</a>
                     <ul class="cvn_pop_con">
                       <li>
                         <a href="#">
@@ -89,7 +89,7 @@
                       </li>
                     </ul>
                     <p class="btn-control">
-                      <a href="" class="button button_b">CLOSE</a>
+                      <a href="javascript:;" id="btn_close" class="button button_b">CLOSE</a>
                     </p>
                   </div>
                 </div>
@@ -149,3 +149,25 @@
 </body>
 
 </html>
+<script>
+  outsize = true;
+  document.getElementById('cvn_but').onclick = function () {
+    document.getElementById('cvnPopup').style.display = 'block';
+  }
+  document.getElementById('cvn_close').onclick = function () {
+    document.getElementById('cvnPopup').style.display = 'none';
+    console.log(122)
+  }
+  document.getElementById('btn_close').onclick = function () {
+    document.getElementById('cvnPopup').style.display = 'none';
+    console.log(111)
+  }
+  document.body.addEventListener('click', function () {
+    outsize = true;
+  }, true)
+  document.body.addEventListener('click', function () {
+    if (outsize) {
+      document.getElementById('cvnPopup').style.display = 'none'
+    }
+  }, true)
+</script>

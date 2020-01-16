@@ -369,7 +369,7 @@
       $("#footer").load("include/footer.html");
     </script>
     <!-- ▲▲▲▲ footer ▲▲▲▲ -->
-    <div class="enlargePop">
+    <div class="enlargePop" id="enlargePop">
       <ul>
         <li>
           <img src="../img/sub/img_large1.jpg" alt="">
@@ -381,7 +381,7 @@
           <img src="../img/sub/img_large2.jpg" alt="">
         </li>
       </ul>
-      <a class="close" href="#">CLOSE</a>
+      <a class="close" href="#" id="enlarge_close">CLOSE</a>
     </div>
   </div>
   <!-- ▲▲▲▲▲▲ wrapper ▲▲▲▲▲▲ -->
@@ -389,3 +389,9 @@
 </body>
 
 </html>
+
+<script>
+  document.getElementById('enlarge_close').onclick = function () {
+    document.getElementById('enlargePop').style = 'display:none';
+  }
+</script>

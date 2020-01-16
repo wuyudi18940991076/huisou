@@ -130,10 +130,10 @@
             <p class="pr_count"><span>1,132</span> Items</p>
             <ul class="pr_filter">
               <li>
-                <p class="prw_size">
+                <p class="prw_size" id="designers_btn">
                   <a href="#">DESIGNERS</a>
                 </p>
-                <div class="designers_pop" style="display: none;">
+                <div class="designers_pop" id="designers_pop" style="display: none;" onclick="outside=false">
                   <h2>DESIGNERS</h2>
                   <input class="dp_search" type="search" placeholder="SEARCH">
                   <ul class="dp_check">
@@ -171,16 +171,16 @@
                       <a class="button button_w" href="">CLEAR</a>
                     </li>
                     <li>
-                      <a class="button button_b" href="">APPLY</a>
+                      <a class="button button_b" href="javascript:;" id="btn_apply1">APPLY</a>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <p class="prw_size">
+                <p class="prw_size" id="prw_size">
                   <a href="#">SIZE</a>
                 </p>
-                <div class="prw_size_pop">
+                <div class="prw_size_pop" id="prw_size_pop" onclick="outside=false">
                   <ul class="dp_menu">
                     <li>
                       <a class="on" href="#">WOMEN'S SIZE</a>
@@ -306,7 +306,7 @@
                       <a href="#" class="button button_w">Clear</a>
                     </li>
                     <li>
-                      <a href="#" class="button button_b">Apply</a>
+                      <a href="#" class="button button_b" id="btn_apply">Apply</a>
                     </li>
                   </ul>
                 </div>
@@ -931,3 +931,28 @@
 </body>
 
 </html>
+
+<script>
+  outside = true;
+  document.getElementById('prw_size').onclick = function () {
+    document.getElementById('prw_size_pop').style.display = 'block';
+  }
+  document.getElementById('btn_apply').onclick = function () {
+    document.getElementById('prw_size_pop').style = 'display:none';
+  }
+  document.getElementById('designers_btn').onclick = function () {
+    document.getElementById('designers_pop').style.display = 'block';
+  }
+  document.getElementById('btn_apply1').onclick = function () {
+    document.getElementById('designers_pop').style = 'display:none';
+  }
+  document.body.addEventListener('click', function () {
+    outside = true
+  }, true)
+  document.body.addEventListener('click', function () {
+    if (outside) {
+      document.getElementById('prw_size_pop').style = 'display:none';
+      document.getElementById('designers_pop').style = 'display:none';
+    }
+  }, true)
+</script>

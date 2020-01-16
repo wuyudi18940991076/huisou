@@ -1,69 +1,60 @@
-<div class="row">
-  <div class="joinArea col-md-8 col-lg-9">
-    <p class="joinTtl">JOIN OUR NEWSLETTERS</p>
-    <p>Sign up and get 10% off</p>
-
-    <!-- default 
-    <p><input type="email" placeholder="Email Address"><a href="#" class="btnStyle">SUBSCRIBE</a></p>
-    -->
-
-    <!-- active01 
-    <p><input type="email" value="jina@gmail.com"><a href="#" class="btnStyle btnStyle1">SUBSCRIBE</a></p>
-    -->
-
-    <!-- active02 -->
-    <p class="font_none">
-      <input type="email" value="jina@gmail.com">
-      <a href="#" class="btnStyle btnStyle1">SUBSCRIBE</a>
-    </p>
-    <p class="redTxt">You've already subscribed.</p>
-
-    <!-- active03 
-    <p><input type="email" value="jina@gmail.com"><a href="#" class="btnStyle btnStyle1">SUBSCRIBE</a></p>
-    <p class="greTxt">Thanks for subscribing our newsletter.</p>
-    -->
-  </div>
-  <div class="f-link col-md-8 col-lg-7">
-    <ul class="link">
-      <li class="open">
-        <a href="#">ABOUT US</a>
-        <ul class="sublink">
-          <li><a href="#">LOIT</a></li>
-          <li><a href="#">Office</a></li>
-          <li><a href="#">Stores</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
+<div class="foot_body">
+  <section class="main_section">
+    <div class="main_left">
+      <h3 class="foot_tit">JOIN OUR NEWSLETTERS</h3>
+      <p class="foot_txt">Sign up and get 10% off</p>
+      <p class="foot_input">
+        <input class="input" type="email" value="jina@gmail.com">
+        <a href="#" class="button button_b">SUBSCRIBE</a>
+      </p>
+      <p class="foot_error">You've already subscribed.</p>
+    </div>
+    <ul class="main_right">
+      <li>
+        <!-- onclick="document.getElementById('foot_menu').className =='open'?'close_up':'open';" -->
+        <dl id="foot_menu" class="open" onclick="document.getElementById('foot_menu').className = (document.getElementById('foot_menu').className == 'open' ?
+        'close_up' : 'open');">
+          <dt><a href="">ABOUT US</a></dt>
+          <dd><a href="">LOIT</a></dd>
+          <dd><a href="">Office</a></dd>
+          <dd><a href="">Stores</a></dd>
+          <dd><a href="">Careers</a></dd>
+        </dl>
       </li>
       <li>
-        <a href="#">CLIENT SERVICE</a>
-        <ul class="sublink">
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Payment</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Size Guide</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+        <dl id="foot_menu2" class="close_up" >
+          <dt><a href="">CLIENT SERVICE</a></dt>
+          <dd><a href="">Shipping</a></dd>
+          <dd><a href="">Payment</a></dd>
+          <dd><a href="">Returns</a></dd>
+          <dd><a href="">Size Guide</a></dd>
+          <dd><a href="">Contact Us</a></dd>
+        </dl>
       </li>
       <li>
-        <a href="#">POLICY</a>
-        <ul class="sublink">
-          <li><a href="#">Cookie policy</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms of use</a></li>
-        </ul>
+        <dl id="foot_menu3" class="close_up" onclick="document.getElementById('foot_menu3').className = (document.getElementById('foot_menu3').className == 'close_up' ?
+        'open' : 'close_up');">
+          <dt><a href="">POLICY</a></dt>
+          <dd><a href="">Cookie policy</a></dd>
+          <dd><a href="">Privacy policy</a></dd>
+          <dd><a href="">Terms of use</a></dd>
+        </dl>
       </li>
     </ul>
-  </div>
+  </section>
+  <section class="bottom_section">
+    <ul class="shareArea">
+      <li><a class="ico-insta" href="#" target="_blank"></a></li>
+      <li><a class="ico-fb" href="#" target="_blank"></a></li>
+      <li><a class="ico-tw" href="#" target="_blank"></a></li>
+    </ul>
+    <p class="copyright">&copy; 2018 LOIT All rights reserved.</p>
+  </section>
 </div>
-<p class="shareArea">
-  <a href="#" target="_blank">
-    <i class="ico-insta">&nbsp;</i>
-  </a>
-  <a href="#" target="_blank">
-    <i class="ico-fb">&nbsp;</i>
-  </a>
-  <a href="#" target="_blank">
-    <i class="ico-tw">&nbsp;</i>
-  </a>
-</p>
-<p class="copyright">© 2018 LOIT All rights reserved.</p>
+<script>
+  var feng = document.getElementById('foot_menu2');
+  feng.onclick = function () {
+    feng.className = (feng.className == 'close_up' ?
+      'open' : 'close_up');
+  }
+</script>

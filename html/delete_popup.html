@@ -170,7 +170,7 @@
         </dl>
         <ul class="wf_btn">
           <li>
-            <a href="" class="button button_w">REMOVE All</a>
+            <a href="" id="remove" class="button button_w">REMOVE All</a>
           </li>
           <li>
             <a href="" class="button button_b">Add All to Bag</a>
@@ -181,7 +181,7 @@
     <!-- ▲▲▲▲ main ▲▲▲▲ -->
     <!-- ▼▼▼▼ footer ▼▼▼▼ -->
     <footer id="footer"></footer>
-    <div class="delete_pop">
+    <div class="delete_pop" id="delete_pop" onclick="outside = false">
       <h1>Delete Wish List Item?</h1>
       <p>Are you sure you would like to delete your wish list item?</p>
       <ul>
@@ -192,7 +192,7 @@
           <a href="" class="button button_b">DELETE</a>
         </li>
       </ul>
-      <a class="close" href="#">close</a>
+      <a class="close" id="delete_close" href="#">close</a>
     </div>
     <script>
       $("#footer").load("include/footer.html");
@@ -204,3 +204,20 @@
 </body>
 
 </html>
+<script>
+  outside = true;
+  document.getElementById('remove').onclick = function () {
+    document.getElementById('delete_pop').style.display = 'block';
+  }
+  document.getElementById('delete_close').onclick = function () {
+    document.getElementById('delete_pop').style = 'display:none';
+  }
+  document.body.addEventListener('click', function () {
+    outside = true;
+  }, true)
+  document.body.addEventListener('click', function () {
+    if (outside) {
+      document.getElementById('delete_pop').style.display = 'none';
+    }
+  }, true)
+</script>

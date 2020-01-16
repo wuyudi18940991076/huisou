@@ -23,7 +23,7 @@
     <!-- ▼▼▼▼ header ▼▼▼▼ -->
     <header id="header"></header>
     <script>
-      $("#header").load("include/headerTwoWord.html");
+      $("#header").load("include/header.html");
     </script>
     <!-- ▲▲▲▲ header ▲▲▲▲ -->
     <!-- ▼▼▼▼ main ▼▼▼▼ -->
@@ -61,8 +61,8 @@
           </ul>
           <div class="date_edit">
             <span class="date_input">
-              <input class="input" type="text" placeholder="DD.MM.YYYY">
-              <div class="data_pop">
+              <input class="input" type="text" placeholder="DD.MM.YYYY" id="start_btn">
+              <div class="data_pop" id="start_pop" onclick="outside=false">
                 <h3>START DATE</h3>
                 <div class="data_choose_con">
                   <div class="topOpt"></div>
@@ -75,12 +75,19 @@
                       <li class="on">24</li>
                       <li>25</li>
                       <li>26</li>
+                      <li>27</li>
+                      <li>28</li>
+                      <li>29</li>
+                      <li>30</li>
                     </ul>
                     <ul>
                       <li>November</li>
                       <li>December</li>
                       <li>January</li>
                       <li class="on">February</li>
+                      <li>March</li>
+                      <li>April</li>
+                      <li>February</li>
                       <li>March</li>
                       <li>April</li>
                     </ul>
@@ -91,6 +98,9 @@
                       <li class="on">2014</li>
                       <li>2015</li>
                       <li>2016</li>
+                      <li>2017</li>
+                      <li>2018</li>
+                      <li>2019</li>
                     </ul>
                   </div>
                 </div>
@@ -103,14 +113,14 @@
                   </li>
                 </ul>
                 <p>
-                  <a href="" class="close"></a>
+                  <a href="javascript:;" class="close" id="start_close"></a>
                 </p>
               </div>
             </span>
             <span class="line">-</span>
             <span class="date_input">
-              <input class="input" type="text" placeholder="DD.MM.YYYY">
-              <div class="data_pop" style="display: none;">
+              <input class="input" type="text" placeholder="DD.MM.YYYY" id="end_btn">
+              <div class="data_pop" id="end_pop" style="display: none;" onclick="outside=false">
                 <h3>END DATE</h3>
                 <div class="data_choose_con">
                   <div class="topOpt"></div>
@@ -123,12 +133,20 @@
                       <li class="on">24</li>
                       <li>25</li>
                       <li>26</li>
+                      <li>27</li>
+                      <li>28</li>
+                      <li>29</li>
+                      <li>30</li>
                     </ul>
                     <ul>
                       <li>November</li>
                       <li>December</li>
                       <li>January</li>
                       <li class="on">February</li>
+                      <li>March</li>
+                      <li>April</li>
+                      <li>April</li>
+                      <li>February</li>
                       <li>March</li>
                       <li>April</li>
                     </ul>
@@ -139,6 +157,10 @@
                       <li class="on">2014</li>
                       <li>2015</li>
                       <li>2016</li>
+                      <li>2016</li>
+                      <li>2017</li>
+                      <li>2018</li>
+                      <li>2019</li>
                     </ul>
                   </div>
                 </div>
@@ -151,7 +173,7 @@
                   </li>
                 </ul>
                 <p>
-                  <a href="" class="close"></a>
+                  <a href="javascript:;" class="close" id="end_close"></a>
                 </p>
               </div>
             </span>
@@ -176,3 +198,21 @@
 </body>
 
 </html>
+<script>
+  outside = true;
+  document.getElementById('start_btn').onclick = function () {
+    document.getElementById('start_pop').style.display = 'block';
+  }
+  document.getElementById('start_close').onclick = function () {
+    document.getElementById('start_pop').style = 'display:none';
+  }
+  document.getElementById('end_btn').onclick = function () {
+    document.getElementById('end_pop').style.display = 'block';
+  }
+  document.getElementById('end_close').onclick = function () {
+    document.getElementById('end_pop').style = 'display:none';
+  }
+  document.body.addEventListener('click', function () {
+    outside = true
+  }, true)
+</script>

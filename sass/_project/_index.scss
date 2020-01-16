@@ -4777,6 +4777,7 @@
                 position: absolute;
                 top: -22px;
                 width: 100%;
+                overflow: hidden;
 
                 ul {
                   display: inline-block;
@@ -4786,7 +4787,8 @@
                   color: #666;
                   text-align: center;
                   box-sizing: border-box;
-
+                  height: 240px;
+                  overflow-x: inherit;
 
                   li {
                     width: 100%;

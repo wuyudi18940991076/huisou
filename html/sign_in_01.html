@@ -23,7 +23,7 @@
     <!-- ▼▼▼▼ header ▼▼▼▼ -->
     <header id="header"></header>
     <script>
-      $("#header").load("include/headerTwoWord.html");
+      $("#header").load("include/header.html");
     </script>
     <!-- ▲▲▲▲ header ▲▲▲▲ -->
     <!-- ▼▼▼▼ main ▼▼▼▼ -->
@@ -40,7 +40,7 @@
                 value="jina@gmail.com">
               <p>The Email or Password you entered is incorrect.</p>
             </div>
-            <p class="forgot_link"><a href="#">Forgot Password?</a></p>
+            <p class="forgot_link"><a href="#" id="forgot_link">Forgot Password?</a></p>
             <p class="sinb_btn">
               <a href="" class="button button_b">SIGN IN</a>
             </p>
@@ -78,12 +78,12 @@
       $("#footer").load("include/footer.html");
     </script>
     <!-- ▲▲▲▲ footer ▲▲▲▲ -->
-    <div class="sign_in_pop" style="display: block;">
+    <div class="sign_in_pop" id="sign_in_pop" onclick="outside=false" style="display: block;">
       <p class="sip_txt">Mail sent to you.<br>Confirmation within 24 hours to change your password.</p>
       <p class="sip_button">
-        <a href="#" class="button button_b">Close</a>
+        <a href="#" id="btn_close" class="button button_b">Close</a>
       </p>
-      <a class="close" href="#">close</a>
+      <a class="close" href="#" id="txt_close">close</a>
     </div>
   </div>
   <!-- ▲▲▲▲▲▲ wrapper ▲▲▲▲▲▲ -->
@@ -91,3 +91,23 @@
 </body>
 
 </html>
+<script>
+  outside = true;
+  document.getElementById('forgot_link').onclick = function () {
+    document.getElementById('sign_in_pop').style.display = 'block';
+  }
+  document.getElementById('btn_close').onclick = function () {
+    document.getElementById('sign_in_pop').style = 'display:none';
+  }
+  document.getElementById('txt_close').onclick = function () {
+    document.getElementById('sign_in_pop').style = 'display:none';
+  }
+  document.body.addEventListener('click', function () {
+    outside = true
+  }, true)
+  document.body.addEventListener('click', function () {
+    if (outside) {
+      document.getElementById('sign_in_pop').style = 'display:none';
+    }
+  }, true)
+</script>

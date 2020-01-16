@@ -1,240 +1,201 @@
-.row {
-  font-size: 0px;
-  display: flex;
+.foot_body {
   border-top: 1px solid #f1f1f1;
+  padding: 38px 40px 0px;
 
-  .joinArea {
-    display: inline-block;
-    vertical-align: top;
-    color: #666;
-    font-size: 11px;
-    padding: 38px 0 10px 48px;
+  .main_section {
+    font-size: 0;
+    padding-bottom: 10px;
 
-    .joinTtl {
-      color: #333;
-      font-size: 13px;
-    }
+    .main_left {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
 
-    .font_none {
-      font-size: 0;
+      .foot_tit {
+        color: #333;
+        font-size: 13px;
+        font-weight: 400;
+      }
 
-      input {
-        display: inline-block;
-        width: 260px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 12px;
+      .foot_txt {
         color: #666;
-        margin: 10px 0 0;
-        padding: 0 10px;
-        box-sizing: border-box;
-        background: none;
-        border: 1px solid #333;
-        vertical-align: middle;
-        border-radius: 0;
+        font-size: 11px;
       }
 
-      .btnStyle {
-        display: inline-block;
-        width: 120px;
-        height: 30px;
-        line-height: 30px;
-        margin: 10px 0 0;
-        font-size: 12px;
-        border: 1px solid #333;
-        border-left: 0px;
-        text-align: center;
-        vertical-align: middle;
-        box-sizing: border-box;
+      .foot_input {
+        display: flex;
+        margin-top: 10px;
+
+        input {
+          width: 260px;
+        }
+
+        a {
+          width: 120px;
+        }
       }
 
-      .btnStyle.btnStyle1 {
-        color: #fff;
-        background: #333;
+      .foot_error {
+        color: #f44d4d;
+        font-size: 11px;
+        padding: 3px 0 0;
       }
     }
 
-    .redTxt {
-      color: #f44d4d;
-      font-size: 11px;
-      padding: 3px 0 0;
-    }
-  }
-
-  .f-link {
-    display: inline-block;
-    vertical-align: top;
-    padding: 38px 40px 10px 0;
-    letter-spacing: 0.5px;
-
-    .link {
-      font-size: 0;
+    .main_right {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
       text-align: right;
 
       li {
-        font-size: 13px;
-        color: #333;
-        display: inline-block;
-        padding-left: 20.3%;
-        vertical-align: top;
+        margin-left: 13.3%;
         text-align: left;
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
 
-        a {
-          color: #333;
+        dl {
+          dt {
+            margin-bottom: 6px;
+
+            a {
+              font-size: 13px;
+              color: #333;
+            }
+          }
+
+          dd {
+            line-height: 22px;
+
+            a {
+              font-size: 11px;
+              color: #666;
+            }
+          }
         }
       }
 
       li:first-child {
-        padding: 0;
-      }
-
-      .sublink {
-        font-size: 11px;
-        color: #666;
-        line-height: 22px;
-        margin-top: 6px;
-
-        li {
-          padding: 0;
-          display: block;
-          font-size: 11px;
-
-          a {
-            color: #666;
-          }
-        }
+        margin-left: 0;
       }
     }
   }
-}
 
-.shareArea {
-  font-size: 0;
-  padding: 10px 0 10px 38px;
+  .bottom_section {
+    display: flex;
+    flex-wrap: wrap;
 
-  a {
-    i {
-      display: inline-block;
-      margin: 0 21px 0 0;
-      width: 14px;
-      height: 14px;
-    }
+    .shareArea {
+      display: flex;
+      width: 100%;
+      padding: 10px 0;
 
-    .ico-insta {
-      background: url(../img/svg/f_insta.svg) no-repeat 0 0;
-      background-size: 14px auto;
-    }
+      li {
+        a {
+          display: inline-block;
+          margin: 0 21px 0 0;
+          width: 14px;
+          height: 14px;
+        }
 
-    .ico-fb {
-      width: 7px;
-      height: 16px;
-      background: url(../img/svg/f_facebook.svg) no-repeat 0 0;
-      background-size: 7px auto;
-    }
+        .ico-insta {
+          background: url(../img/svg/f_insta.svg) no-repeat 0 0;
+          background-size: 14px auto;
+        }
 
-    .ico-tw {
-      width: 16px;
-      background: url(../img/svg/f_twitter.svg) no-repeat 0 0;
-      background-size: 16px auto;
-    }
-  }
-}
+        .ico-fb {
+          width: 7px;
+          height: 16px;
+          background: url(../img/svg/f_facebook.svg) no-repeat 0 0;
+          background-size: 7px auto;
+        }
 
-.copyright {
-  color: #c1c1c1;
-  letter-spacing: 0.5px;
-  padding: 16px 0 16px 38px;
-}
-
-@media screen and (max-width: 1200px) {
-  .row {
-    .f-link {
-      .link {
-        li {
-          padding-left: 13.3%;
+        .ico-tw {
+          width: 16px;
+          background: url(../img/svg/f_twitter.svg) no-repeat 0 0;
+          background-size: 16px auto;
         }
       }
+    }
+
+    .copyright {
+      font-size: 11px;
+      color: #c1c1c1;
+      padding: 16px 0;
     }
   }
 }
 
 @media screen and (max-width: 992px) {
-  .row {
-    .joinArea {
-      display: inline-block;
-      width: 50%;
-      padding: 20px 0 10px 25px;
+  .foot_body {
+    padding: 20px 15px 0;
 
-      .font_none {
-        input {
-          width: 220px;
+    .main_section {
+      .main_left {
+        .foot_input {
+          input {
+            width: 220px;
+          }
         }
       }
-    }
 
-    .f-link {
-      display: inline-block;
-      width: 50%;
-      padding: 20px 25px 10px 0;
-
-      .link {
+      .main_right {
         li {
-          padding-left: 10%;
+          margin-left: 10%;
+          min-width: 80px;
         }
       }
     }
-  }
-
-  .shareArea {
-    padding-left: 15px;
-  }
-
-  .copyright {
-    padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .row {
-    margin: 0;
-    display: block;
+  .foot_body {
+    padding: 17px 15px 0;
 
-    .joinArea {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 17px 15px 0 15px;
+    .main_section {
+      .main_left {
+        width: 100%;
 
-      .font_none {
-        input {
-          width: calc(100% - 90px);
-        }
+        .foot_input {
+          input {
+            width: calc(100% - 90px);
+          }
 
-        .btnStyle {
-          width: 90px;
+          a {
+            width: 90px;
+          }
         }
       }
-    }
 
-    .f-link {
-      display: block;
-      width: 100%;
-      padding: 20px 0 0;
-      border-bottom: 1px solid #f1f1f1;
+      .main_right {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+        padding: 20px 0 0;
+        border-bottom: 1px solid #f1f1f1;
 
-      .link {
         li {
+          margin-left: 0;
           position: relative;
           display: block;
           padding: 16px 15px;
           border-top: 1px solid #f1f1f1;
+        }
 
-          a {
+        .close_up {
+          dd {
+            display: none;
+          }
+        }
+
+        .open {
+          dd {
             display: block;
           }
         }
 
-        li::after {
+        .close_up:after {
           content: '';
           display: block;
           clear: both;
@@ -248,26 +209,7 @@
           background-size: 15px auto;
         }
 
-        .sublink {
-          display: none;
-
-          li {
-            border: none;
-            padding: 0 !important;
-          }
-
-          li::after {
-            content: none;
-          }
-        }
-
-        .open {
-          .sublink {
-            display: block;
-          }
-        }
-
-        .open::after {
+        .open:after {
           content: '';
           display: block;
           clear: both;
@@ -280,47 +222,40 @@
           background: url(../img/svg/f_collapse.svg) 100% center no-repeat;
           background-size: 15px auto;
         }
+      }
+    }
 
-        li:first-child {
-          padding: 16px 15px;
+    .bottom_section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      .shareArea {
+        width: auto;
+
+        li {
+          .ico-insta {
+            width: 16px;
+            height: 16px;
+            background: url(../img/svg/f_insta.svg) no-repeat 0 0;
+            background-size: 16px auto;
+          }
+
+          .ico-fb {
+            width: 8px;
+            height: 19px;
+            background: url(../img/svg/f_facebook.svg) no-repeat 0 0;
+            background-size: 8px auto;
+          }
+
+          .ico-tw {
+            width: 18px;
+            height: 17px;
+            background: url(../img/svg/f_twitter.svg) no-repeat 0 0;
+            background-size: 18px auto;
+          }
         }
       }
     }
-  }
-
-  .shareArea {
-    padding: 16px 0 10px 15px;
-
-    a {
-      i {
-        margin: 0 23px 0 0;
-      }
-
-      .ico-insta {
-        width: 16px;
-        height: 16px;
-        background-size: 16px auto;
-      }
-
-      .ico-fb {
-        width: 8px;
-        height: 19px;
-        background-size: 8px auto;
-      }
-
-      .ico-tw {
-        width: 18px;
-        height: 17px;
-        background: url(../img/svg/f_twitter.svg) no-repeat 0 0;
-        background-size: 18px auto;
-      }
-    }
-  }
-
-  .copyright {
-    position: absolute;
-    bottom: 14px;
-    right: 15px;
-    padding: 0;
   }
 }
